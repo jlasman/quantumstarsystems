@@ -190,7 +190,7 @@ export default function EnhancedTechLayout({ technology }: EnhancedTechLayoutPro
                       to="/products/qrat-assessment"
                       className="inline-flex items-center justify-center space-x-2 bg-slate-700 hover:bg-slate-600 border border-slate-600 hover:border-slate-500 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300"
                     >
-                      <span>Request Free Assessment</span>
+                      <span>Schedule a Discovery Call</span>
                     </Link>
                   </div>
                 </div>

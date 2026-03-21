@@ -6,7 +6,7 @@ const products = [
     id: 'qrat-assessment',
     title: 'QRAT Assessment',
     subtitle: 'Your Roadmap to Quantum Advantage',
-    description: 'Comprehensive two-week assessment identifying your highest-impact quantum opportunities, evaluating data readiness, and delivering a strategic roadmap with ROI projections.',
+    description: 'Start with a focused Discovery Sprint, then scale to a full two-week diagnostic. We identify your highest-impact quantum opportunities, evaluate data readiness, and deliver a strategic roadmap with quantified ROI projections.',
     icon: Target,
     path: '/products/qrat-assessment',
     gradient: 'from-emerald-500 to-teal-500',

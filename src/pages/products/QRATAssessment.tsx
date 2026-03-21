@@ -11,7 +11,7 @@ export default function QRATAssessment() {
               The QRAT Assessment: Your Quantum Roadmap in 14 Days
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
-              From Complexity to Clarity. From Cost to ROI. The QRAT is our flagship diagnostic service.
+              From Complexity to Clarity. From Cost to ROI. Start with a Discovery Sprint and scale to a full diagnostic.
             </p>
             <Link
               to="/contact"
@@ -92,68 +92,76 @@ export default function QRATAssessment() {
       <section className="py-20 bg-slate-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">How It Works</h2>
-            <p className="text-xl text-gray-400">A comprehensive 2-week process</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Two Ways to Engage</h2>
+            <p className="text-xl text-gray-400">Start fast with a Discovery Sprint, or go deep with the full QRAT Assessment</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700">
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  1
-                </div>
-                <h3 className="text-2xl font-bold text-white">Week 1: Discovery & Deep-Dive Analysis</h3>
+              <div className="flex items-center space-x-3 mb-2">
+                <Zap className="w-6 h-6 text-cyan-400" />
+                <span className="text-cyan-400 text-sm font-mono tracking-wider uppercase">Entry Point</span>
               </div>
-              <ul className="space-y-4 text-gray-300">
+              <h3 className="text-2xl font-bold text-white mb-4">Discovery Sprint</h3>
+              <p className="text-gray-400 mb-6">A focused one-week engagement to scope your highest-impact opportunities and determine the path forward.</p>
+              <ul className="space-y-3 text-gray-300 mb-6">
                 <li className="flex items-start space-x-3">
-                  <Clock className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <strong className="text-white">Executive Workshops:</strong> Understand business objectives, pain points, and strategic priorities
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                  <span>Executive discovery workshops</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <Clock className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <strong className="text-white">Infrastructure Review:</strong> Assess current systems, data architecture, and technical capabilities
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                  <span>Infrastructure and data architecture review</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <Clock className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <strong className="text-white">Problem Identification:</strong> Map specific business challenges to quantum/AI solutions
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                  <span>Preliminary readiness score and go/no-go recommendation</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                  <span>Executive readout with prioritized opportunities</span>
                 </li>
               </ul>
+              <div className="text-sm text-gray-500">Typically 5 business days</div>
             </div>
 
-            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700">
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-cyan-600 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  2
-                </div>
-                <h3 className="text-2xl font-bold text-white">Week 2: Solution Mapping & Roadmap Delivery</h3>
+            <div className="bg-slate-800 rounded-2xl p-8 border border-indigo-500/30 relative">
+              <div className="absolute -top-3 right-6 bg-gradient-to-r from-indigo-600 to-cyan-600 text-white text-xs font-bold px-3 py-1 rounded-full">COMPREHENSIVE</div>
+              <div className="flex items-center space-x-3 mb-2">
+                <Target className="w-6 h-6 text-indigo-400" />
+                <span className="text-indigo-400 text-sm font-mono tracking-wider uppercase">Full Diagnostic</span>
               </div>
-              <ul className="space-y-4 text-gray-300">
+              <h3 className="text-2xl font-bold text-white mb-4">QRAT Assessment</h3>
+              <p className="text-gray-400 mb-6">The complete two-week diagnostic with proprietary tooling, deep technical analysis, and a quantified roadmap.</p>
+              <ul className="space-y-3 text-gray-300 mb-6">
                 <li className="flex items-start space-x-3">
-                  <Clock className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <strong className="text-white">Solution Mapping:</strong> Match your challenges to our proven technologies
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span>Everything in the Discovery Sprint, plus:</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <Clock className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <strong className="text-white">ROI Modeling:</strong> Quantify expected business impact and investment requirements
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span>Deep analysis using proprietary QSS tools (TSL-ANN, UQF, Q-VaR)</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <Clock className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <strong className="text-white">Roadmap Delivery:</strong> Present comprehensive plan with prioritized initiatives
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span>Comprehensive Readiness Score across 42 criteria</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span>Quantified ROI projections and phased implementation roadmap</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span>Problem-Solution Fit report with prioritized initiatives</span>
                 </li>
               </ul>
+              <div className="text-sm text-gray-500">Two weeks, delivered as a fixed-fee engagement</div>
             </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-gray-400 mb-2">Most clients start with a Discovery Sprint, then expand to the full QRAT Assessment.</p>
+            <p className="text-gray-500 text-sm">Schedule a discovery call to discuss scope and pricing for your organization.</p>
           </div>
         </div>
       </section>

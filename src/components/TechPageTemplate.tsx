@@ -67,7 +67,7 @@ export default function TechPageTemplate({ title, subtitle, icon: Icon, overview
               to="/products/qrat-assessment"
               className="inline-flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 hover:border-slate-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all"
             >
-              <span>Request Free Assessment</span>
+              <span>Schedule a Discovery Call</span>
             </Link>
           </div>
         </div>

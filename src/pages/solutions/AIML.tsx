@@ -153,13 +153,13 @@ export default function AIML() {
       <section className="bg-slate-900/30 rounded-xl p-8 border border-slate-700 text-center">
         <h2 className="text-3xl font-bold text-white mb-4">Ready to Harness AI for Your Business?</h2>
         <p className="text-xl text-gray-300 mb-6">
-          Discover how AI can transform your operations with a free assessment
+          Discover how AI can transform your operations with a Discovery Sprint
         </p>
         <Link
           to="/products/qrat-assessment"
           className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 px-8 py-3 rounded-lg font-semibold transition-all shadow-lg shadow-cyan-500/25"
         >
-          <span>Request Free Assessment</span>
+          <span>Schedule a Discovery Call</span>
           <ArrowRight className="w-5 h-5" />
         </Link>
       </section>

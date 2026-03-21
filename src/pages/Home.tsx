@@ -28,7 +28,7 @@ export default function Home() {
     },
     {
       question: "What is the typical investment for a QRAT Assessment?",
-      answer: "The QRAT Assessment is offered as a complimentary service for qualified enterprises. This two-week engagement includes workshops, technical analysis, and delivery of a comprehensive quantum readiness roadmap with ROI projections."
+      answer: "The QRAT Assessment is a comprehensive two-week diagnostic engagement. It begins with a Discovery Sprint to scope your highest-impact opportunities, followed by deep technical analysis using our proprietary tools, and concludes with delivery of a quantum readiness roadmap with quantified ROI projections. Schedule a discovery call to discuss scope and pricing for your organization."
     },
     {
       question: "What happens after a successful pilot?",
@@ -64,7 +64,7 @@ export default function Home() {
               to="/products/qrat-assessment"
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40"
             >
-              <span>Request Free Assessment</span>
+              <span>Schedule a Discovery Call</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
@@ -367,16 +367,16 @@ export default function Home() {
 
       <section className="py-20 bg-gradient-to-br from-indigo-950/50 via-slate-950 to-cyan-950/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Unlock Value Now</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Start With a Discovery Sprint</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Start your quantum journey with a comprehensive assessment
+            A focused engagement to identify your highest-impact opportunities and quantify ROI
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/products/qrat-assessment"
               className="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-indigo-500/25"
             >
-              <span>Take the Free Assessment</span>
+              <span>Book a Discovery Call</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
