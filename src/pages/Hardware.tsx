@@ -61,7 +61,7 @@ export default function Hardware() {
               QSS is building the first room-temperature, rack-mountable deterministic optical quantum computer — using off-the-shelf telecom components.
             </p>
             <a
-              href="mailto:amos.sterling@quantumstarsystems.com?subject=QSS%20Hardware%20Investment%20Inquiry"
+              href="mailto:jeremy@quantumstarsystems.com?subject=QSS%20Hardware%20Investment%20Inquiry"
               className="inline-flex items-center space-x-2 bg-white text-slate-900 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg"
             >
               <span>Request Investor Deck</span>
@@ -548,13 +548,13 @@ export default function Hardware() {
             Join us in building the first deterministic optical computer.
           </p>
           <a
-            href="mailto:amos.sterling@quantumstarsystems.com?subject=QSS%20Hardware%20Investment%20Inquiry"
+            href="mailto:jeremy@quantumstarsystems.com?subject=QSS%20Hardware%20Investment%20Inquiry"
             className="inline-flex items-center space-x-2 bg-white text-slate-900 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg"
           >
             <span>Contact Us</span>
             <ArrowRight className="w-5 h-5" />
           </a>
-          <p className="mt-4 text-gray-500 text-sm font-mono">amos.sterling@quantumstarsystems.com</p>
+          <p className="mt-4 text-gray-500 text-sm font-mono">jeremy@quantumstarsystems.com</p>
         </div>
       </section>
     </div>
