@@ -1,5 +1,6 @@
 import { ArrowRight, Zap, Thermometer, Server, Cpu, Clock, Shield, BarChart3, FlaskConical, Truck, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import { IMAGES } from '../lib/images';
 
 export default function Hardware() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -95,9 +96,9 @@ export default function Hardware() {
                   <span className="text-gray-400 font-mono text-sm">COMPETITORS (Linear Optics)</span>
                   <span className="text-red-400 font-bold">~50% Gate Success</span>
                 </div>
-                <div className="w-full bg-slate-700 rounded-full h-4">
-                  <div className="bg-gradient-to-r from-red-600 to-red-400 h-4 rounded-full" style={{ width: '90%' }}>
-                    <span className="text-xs font-bold text-white pl-2 leading-4 inline-block">90% Error Correction Overhead</span>
+                <div className="w-full bg-slate-700 rounded-full h-6">
+                  <div className="bg-gradient-to-r from-red-600 to-red-400 h-6 rounded-full flex items-center" style={{ width: '90%' }}>
+                    <span className="text-xs font-bold text-white pl-3 whitespace-nowrap">90% Error Correction Overhead</span>
                   </div>
                 </div>
                 <p className="text-xs text-gray-500 mt-2">Only 10% of compute is useful work</p>
@@ -107,9 +108,9 @@ export default function Hardware() {
                   <span className="text-cyan-400 font-mono text-sm">QSS (Deterministic Active Optics)</span>
                   <span className="text-cyan-400 font-bold">{'>'}99% Gate Fidelity</span>
                 </div>
-                <div className="w-full bg-slate-700 rounded-full h-4">
-                  <div className="bg-gradient-to-r from-cyan-600 to-blue-400 h-4 rounded-full" style={{ width: '99%' }}>
-                    <span className="text-xs font-bold text-white pl-2 leading-4 inline-block">99% Useful Compute</span>
+                <div className="w-full bg-slate-700 rounded-full h-6">
+                  <div className="bg-gradient-to-r from-cyan-600 to-blue-400 h-6 rounded-full flex items-center" style={{ width: '99%' }}>
+                    <span className="text-xs font-bold text-white pl-3 whitespace-nowrap">99% Useful Compute</span>
                   </div>
                 </div>
                 <p className="text-xs text-gray-500 mt-2">Logic gates happen on command, every single time</p>
@@ -417,18 +418,24 @@ export default function Hardware() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-12">
             <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 rounded-full mx-auto mb-4 flex items-center justify-center border border-indigo-500/30">
-                <span className="text-2xl font-bold text-white">JL</span>
-              </div>
+              <img
+                src={IMAGES.jeremyHeadshot}
+                alt="Jeremy Lasman"
+                className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-indigo-500/30"
+                onError={(e) => { e.currentTarget.style.display = 'none'; }}
+              />
               <h3 className="text-white font-semibold text-lg">Jeremy Lasman</h3>
               <p className="text-cyan-400 text-sm mb-3">Co-Founder & CEO</p>
               <p className="text-gray-400 text-sm">Former SpaceX technologist. Vision, architecture, and business strategy.</p>
             </div>
             <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 rounded-full mx-auto mb-4 flex items-center justify-center border border-indigo-500/30">
-                <span className="text-2xl font-bold text-white">AS</span>
-              </div>
-              <h3 className="text-white font-semibold text-lg">Amos Sterling</h3>
+              <img
+                src={IMAGES.marsHeadshot}
+                alt="Mars Lucchetta"
+                className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-indigo-500/30"
+                onError={(e) => { e.currentTarget.style.display = 'none'; }}
+              />
+              <h3 className="text-white font-semibold text-lg">Mars Lucchetta</h3>
               <p className="text-cyan-400 text-sm mb-3">Co-Founder & CTO</p>
               <p className="text-gray-400 text-sm">10+ years quantum R&D. Creator of the Universal Technique. Physics and engineering lead.</p>
             </div>
@@ -460,14 +467,14 @@ export default function Hardware() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700 rounded-2xl p-8 md:p-12">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-green-400 text-sm font-mono">Revenue-Generating Today</span>
+                <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                <span className="text-cyan-400 text-sm font-mono">Validated & Market-Ready</span>
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                 Not Just Hardware. A Full Stack.
               </h2>
               <p className="text-gray-400 mb-8 leading-relaxed">
-                While we build the deterministic hardware, our proprietary software stack is already deployed and generating enterprise engagement. This is not a company waiting for hardware to exist — it's a company with validated software building the hardware to run it on.
+                While we build the deterministic hardware, our proprietary software stack is validated and ready for enterprise deployment. This is not a company waiting for hardware to exist — it's a company with proven software building the hardware to run it on.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3">
