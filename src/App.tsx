@@ -29,6 +29,7 @@ const PitchDeck = lazy(() => import('./pages/PitchDeck'));
 const PitchDeckA = lazy(() => import('./pages/PitchDeckA'));
 const ROICalculator = lazy(() => import('./pages/ROICalculator'));
 const OnePager = lazy(() => import('./pages/OnePager'));
+const Hardware = lazy(() => import('./pages/Hardware'));
 const BlogHub = lazy(() => import('./pages/BlogHub'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
 const AdminLogin = lazy(() => import('./pages/admin/AdminLogin'));
@@ -108,6 +109,7 @@ function App() {
                     <Route path="/blog" element={<BlogHub />} />
                     <Route path="/blog/:slug" element={<BlogPost />} />
                     <Route path="/one-pager" element={<OnePager />} />
+                    <Route path="/hardware" element={<Hardware />} />
                   </Routes>
                 </main>
                 <Footer />
