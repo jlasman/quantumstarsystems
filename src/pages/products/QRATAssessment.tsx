@@ -13,22 +13,13 @@ export default function QRATAssessment() {
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
               From Complexity to Clarity. From Cost to ROI. The QRAT is our flagship diagnostic service.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
-                to="/qrat"
-                className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-cyan-500/25"
-              >
-                <span>Take the Assessment</span>
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                to="/contact"
-                className="inline-flex items-center space-x-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 px-8 py-4 rounded-lg text-lg font-semibold transition-all"
-              >
-                <span>Book a Discovery Call</span>
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
+            <Link
+              to="/contact"
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-indigo-500/25"
+            >
+              <span>Book a Discovery Call</span>
+              <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </section>
@@ -278,24 +269,15 @@ export default function QRATAssessment() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Begin Your Quantum Journey?</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Take the assessment now or schedule a discovery call to learn how the QRAT Assessment can unlock value for your organization
+            Schedule a discovery call to learn how the QRAT Assessment can unlock value for your organization
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link
-              to="/qrat"
-              className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-cyan-500/25"
-            >
-              <span>Take the Assessment</span>
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-            <Link
-              to="/contact"
-              className="inline-flex items-center space-x-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 px-8 py-4 rounded-lg text-lg font-semibold transition-all"
-            >
-              <span>Book a Discovery Call</span>
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
+          <Link
+            to="/contact"
+            className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-indigo-500/25"
+          >
+            <span>Book a Discovery Call</span>
+            <ArrowRight className="w-5 h-5" />
+          </Link>
         </div>
       </section>
     </div>

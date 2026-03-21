@@ -20,7 +20,6 @@ const UQF = lazy(() => import('./pages/tech/UQF'));
 const TSLANN = lazy(() => import('./pages/tech/TSLANN'));
 const QuantumVaR = lazy(() => import('./pages/tech/QuantumVaR'));
 const QRATAssessment = lazy(() => import('./pages/products/QRATAssessment'));
-const QRATInteractive = lazy(() => import('./pages/QRATInteractive'));
 const EnterpriseSolutions = lazy(() => import('./pages/products/EnterpriseSolutions'));
 const AboutUs = lazy(() => import('./pages/AboutUs'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -102,7 +101,6 @@ function App() {
                     <Route path="/tech/tsl-ann" element={<TSLANN />} />
                     <Route path="/tech/quantum-var" element={<QuantumVaR />} />
                     <Route path="/products/qrat-assessment" element={<QRATAssessment />} />
-                    <Route path="/qrat" element={<QRATInteractive />} />
                     <Route path="/products/enterprise-solutions" element={<EnterpriseSolutions />} />
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/contact" element={<Contact />} />
