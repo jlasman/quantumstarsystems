@@ -432,28 +432,49 @@ export default function Hardware() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-12">
-            <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 text-center">
-              <img
-                src={IMAGES.jeremyHeadshot}
-                alt="Jeremy Lasman"
-                className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-indigo-500/30"
-                onError={(e) => { e.currentTarget.style.display = 'none'; }}
-              />
-              <h3 className="text-white font-semibold text-lg">Jeremy Lasman</h3>
-              <p className="text-cyan-400 text-sm mb-3">Co-Founder & CEO</p>
-              <p className="text-gray-400 text-sm">Former SpaceX technologist. Vision, architecture, and business strategy.</p>
+          <div className="mb-12">
+            <p className="text-sm text-gray-500 font-mono tracking-wide uppercase mb-6 text-center">Founders</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+              <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 text-center">
+                <img
+                  src={IMAGES.jeremyHeadshot}
+                  alt="Jeremy Lasman"
+                  className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-indigo-500/30"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                />
+                <h3 className="text-white font-semibold text-lg">Jeremy Lasman</h3>
+                <p className="text-cyan-400 text-sm mb-3">Co-Founder</p>
+                <p className="text-gray-400 text-sm">Former SpaceX technologist. Vision, architecture, and business strategy.</p>
+              </div>
+              <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 text-center">
+                <img
+                  src={IMAGES.marsHeadshot}
+                  alt="Mars Lucchetta"
+                  className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-indigo-500/30"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                />
+                <h3 className="text-white font-semibold text-lg">Mars Lucchetta</h3>
+                <p className="text-cyan-400 text-sm mb-3">Co-Founder</p>
+                <p className="text-gray-400 text-sm">10+ years quantum R&D. Creator of the Universal Technique. Physics and engineering lead.</p>
+              </div>
             </div>
-            <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 text-center">
-              <img
-                src={IMAGES.marsHeadshot}
-                alt="Mars Lucchetta"
-                className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-indigo-500/30"
-                onError={(e) => { e.currentTarget.style.display = 'none'; }}
-              />
-              <h3 className="text-white font-semibold text-lg">Mars Lucchetta</h3>
-              <p className="text-cyan-400 text-sm mb-3">Co-Founder & CTO</p>
-              <p className="text-gray-400 text-sm">10+ years quantum R&D. Creator of the Universal Technique. Physics and engineering lead.</p>
+          </div>
+
+          <div className="mb-12">
+            <p className="text-sm text-gray-500 font-mono tracking-wide uppercase mb-6 text-center">Leadership</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+              <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 text-center">
+                <h4 className="text-white font-semibold">Amos Sterling</h4>
+                <p className="text-cyan-400 text-sm mt-1">CEO</p>
+              </div>
+              <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 text-center">
+                <h4 className="text-white font-semibold">German Palacios</h4>
+                <p className="text-cyan-400 text-sm mt-1">VP of Engineering</p>
+              </div>
+              <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 text-center">
+                <h4 className="text-white font-semibold">Hugo Rodriguez</h4>
+                <p className="text-cyan-400 text-sm mt-1">Senior Optical Engineer</p>
+              </div>
             </div>
           </div>
 
