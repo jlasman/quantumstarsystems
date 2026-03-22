@@ -11,24 +11,40 @@ export default function Hardware() {
 
   const faqs = [
     {
-      question: "What makes QSS different from other photonic quantum companies?",
-      answer: "Every other optical quantum computing company uses Linear Optics, where logic gates succeed only ~50% of the time. We use Deterministic Active Optics — our proprietary QD-SOA engine forces photon interaction on command, achieving >99% gate fidelity. This eliminates the massive error correction overhead that makes competitors' systems uneconomical to scale."
+      question: "How do you compete with PsiQuantum and other well-funded photonic companies?",
+      answer: "We aren't competing with PsiQuantum's timeline because we aren't fighting their physics. PsiQuantum is attempting to scale fragile, single-photon entanglement — requiring massive cryogenic infrastructure and probabilistic error correction. They are fighting thermodynamics. We are building a macroscopic, coherent optical processor using standard telecom power levels (millions of photons per pulse) and deterministic QD-SOAs. We operate at room temperature with >99% gate fidelity. We don't need $500M to build custom cryogenic foundries — we use standard, off-the-shelf silicon photonics supply chains that exist today."
     },
     {
-      question: "How can you operate at room temperature?",
-      answer: "We solve two distinct thermal problems. For chip-level heat: our Quantum Dot SOAs achieve the required pi phase shift using milliwatts, not watts, so minimal heat is generated — easily managed by standard telecom-grade Thermo-Electric Coolers. For fiber-level environmental drift: we use a high-speed PID controller linked to a piezoelectric fiber stretcher that actively cancels thermal expansion in real-time. We don't freeze the room — we cancel the noise."
+      question: "If you scale to millions of qubits, won't the lasers melt the server rack?",
+      answer: "That would be true if we built spatial qubits — where 1 million qubits equals 1 million lasers. But our architecture uses Time-Division Multiplexing (TDM). We use a handful of 30-milliwatt telecom lasers and chop the light into millions of time-bins circulating in fiber. We scale in time, not space. Computing via optical phase-shifts consumes a fraction of the thermodynamic energy of flipping billions of electrical transistors. We deliver orders of magnitude more matrix operations per watt than a GPU cluster, all at room temperature."
     },
     {
-      question: "Why only 10 qubits?",
-      answer: "10 deterministic qubits is the proof-of-concept that unlocks everything. Because our architecture scales via laser pulse frequency (time-binning), the same physical unit can scale to more qubits via software without hardware modification. The 10-qubit unit proves the physics; scaling is an engineering exercise from there."
+      question: "How does a software engineer write code for this?",
+      answer: "They don't need to know what a photon is. We are building a hardware abstraction layer that natively accepts OpenQASM and integrates with standard Python libraries like Qiskit. If a data scientist has already written a QAOA optimization script for an IBM or IonQ machine, they simply change the target execution backend to our API, and our compiler translates their code into optical timing signals for our FPGA. Zero friction, zero learning curve."
     },
     {
-      question: "What is the current validation status?",
-      answer: "We have built a comprehensive Stochastic Physical Model (Digital Twin) that validates >99% gate fidelity, 100-picosecond pulse timing precision, active feedback compensation for room-temperature operation, and successful simulation of up to 1,000 virtual qubits in a single loop. Equipment has been sourced and suppliers locked for Phase 1."
+      question: "Who validated the physics?",
+      answer: "We are not inventing new physics — we are inventing a new architecture. The underlying physics of our system (Mach-Zehnder wave interference, Time-Division Multiplexing, Cross-Phase Modulation in standard QD-SOAs) have been validated by decades of telecom industry usage and thousands of peer-reviewed papers. What we have done is architect these proven, macroscopic telecom phenomena into a deterministic, Turing-complete logic loop. Our internal engineering team validated this architecture through a rigorous Digital Twin simulation accounting for real-world telecom parameters: insertion loss, phase noise, and wavelength conversion."
+    },
+    {
+      question: "Why no published papers?",
+      answer: "Deliberate strategic choice. We are building a commercial semiconductor company, not a university research project. The fundamental physics of our components (QD-SOAs, fiber optic TDM loops) are already heavily published and peer-reviewed by the telecom industry. However, our specific architecture — the wavelength routing and deterministic logic thresholds — is highly proprietary. Publishing would give our exact blueprint to well-funded competitors. We are keeping our system-level architecture as a closely guarded trade secret until our IP portfolio is fully secured."
+    },
+    {
+      question: "What is the patent status?",
+      answer: "We are filing a Provisional Patent with the USPTO. Our entire core IP is mapped and documented internally — specifically the deterministic MZI logic core, TDM memory routing, and All-Optical Wavelength Conversion (AOWC) loop. Executing a robust, defensible global utility patent strategy requires significant capital, so we have deferred formal filings to be a primary Use of Funds for this Seed round. The claims are ready; the moment the capital clears, our first check goes to premier deep-tech patent counsel."
+    },
+    {
+      question: "Is there a working prototype?",
+      answer: "We have two prototypes. First, our Digital Twin — a fully functional software prototype that mathematically simulates the exact logic gates, routing, and thermal realities of the optical hardware. Second, we are assembling a macroscopic prototype using RF/Audio frequencies. Because wave interference math is scale-invariant, this macro-prototype physically demonstrates the exact deterministic logic and recirculating memory loop of our optical architecture using off-the-shelf electronics. The 10-qubit 1550nm optical prototype is the direct milestone of this funding round."
+    },
+    {
+      question: "What is the cap table?",
+      answer: "100% clean and fully founder-owned. We have deliberately bootstrapped to date, investing our own time and capital to completely de-risk the theoretical physics and build the digital twin architecture. Zero dead equity and no prior outside investors — maximum flexibility to construct a standard Seed round, build out a healthy employee option pool, and ensure perfect alignment between the founding team and our lead investor."
     },
     {
       question: "What does the $4M seed fund?",
-      answer: "R&D Team (45%, $1.8M): Hiring 3 specialist engineers — Lead Optical Engineer, Principal Systems Engineer, and Packaging Engineer. Equipment (30%, $1.2M): Metrology-grade optical bench, high-speed FPGA systems, and test instrumentation. Fabrication (15%, $600K): QD-SOA chip fabrication runs. Operations & IP (10%, $400K): Facility, patent filings, and operations."
+      answer: "R&D Team (45%, $1.8M): 3 specialist engineers — Lead Optical Engineer, Principal Systems Engineer, and Packaging Engineer. Equipment (30%, $1.2M): Metrology-grade optical bench, high-speed FPGA systems, and test instrumentation. Fabrication (15%, $600K): QD-SOA chip fabrication runs. Operations & IP (10%, $400K): Facility, patent filings, and operations."
     },
   ];
 
@@ -499,8 +515,71 @@ export default function Hardware() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Three Pillars */}
+      <section className="py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <p className="text-sm text-gray-500 font-mono tracking-widest uppercase mb-4">The Three Pillars</p>
+            <p className="text-lg text-gray-400">Every design decision falls back to three principles.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-slate-800/30 border border-slate-800 rounded-xl p-6 text-center">
+              <div className="text-2xl font-bold text-cyan-400 mb-2">TDM Memory</div>
+              <p className="text-gray-400 text-sm">Scales in time, not space. Minimal hardware. A handful of lasers support millions of time-bin qubits.</p>
+            </div>
+            <div className="bg-slate-800/30 border border-slate-800 rounded-xl p-6 text-center">
+              <div className="text-2xl font-bold text-cyan-400 mb-2">Macroscopic Optics</div>
+              <p className="text-gray-400 text-sm">Room temperature, no cryogenics. Standard telecom power levels. Millions of photons per pulse, not one.</p>
+            </div>
+            <div className="bg-slate-800/30 border border-slate-800 rounded-xl p-6 text-center">
+              <div className="text-2xl font-bold text-cyan-400 mb-2">Deterministic Logic</div>
+              <p className="text-gray-400 text-sm">100% gate success rate. No quantum error correction needed. Every operation executes on command.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Beyond the Seed */}
       <section className="py-20 bg-slate-900/50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Beyond the Seed.</h2>
+            <p className="text-lg text-gray-400 max-w-2xl mx-auto">The 10-qubit prototype is the beginning, not the destination.</p>
+          </div>
+          <div className="space-y-6">
+            <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex items-start space-x-4">
+              <div className="w-10 h-10 bg-cyan-500/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span className="text-cyan-400 font-bold text-sm">A</span>
+              </div>
+              <div>
+                <h3 className="text-white font-semibold mb-1">Series A: The Rack & Chip Phase</h3>
+                <p className="text-gray-400 text-sm">$15-25M raise. Miniaturize discrete components onto Photonic Integrated Circuits (PICs) via commercial foundry (GlobalFoundries, Tower, imec). Move from optical table to 1U server rack. Scale to 1,000 qubits via TDM. Demonstrate beachhead application: combinatorial optimization faster than NVIDIA GPUs.</p>
+              </div>
+            </div>
+            <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex items-start space-x-4">
+              <div className="w-10 h-10 bg-cyan-500/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span className="text-cyan-400 font-bold text-sm">B</span>
+              </div>
+              <div>
+                <h3 className="text-white font-semibold mb-1">Series B: Optical Compute-as-a-Service</h3>
+                <p className="text-gray-400 text-sm">Don't sell the hardware — sell the compute. Cloud API (like AWS Braket) where enterprise clients submit optimization and AI matrices, our optical chips compute at the speed of light, and we send answers back. Demonstrate horizontal scaling: Rack A linked to Rack B via standard fiber. Officially a supercomputing company.</p>
+              </div>
+            </div>
+            <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex items-start space-x-4">
+              <div className="w-10 h-10 bg-red-500/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span className="text-red-400 font-bold text-sm">Exit</span>
+              </div>
+              <div>
+                <h3 className="text-white font-semibold mb-1">Strategic Acquisition</h3>
+                <p className="text-gray-400 text-sm">Our architecture solves the two biggest crises in tech: the AI Power Wall (data centers running out of electricity) and the Quantum Winter (failure of single-photon systems to scale). Acquirers: AI hardware giants (NVIDIA, AMD, Broadcom), hyperscalers (Google, AWS, Microsoft), or telecom/supercomputing conglomerates (NTT, Fujitsu, HPE).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Investor Questions</h2>
