@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 import { IMAGES } from '../lib/images';
 
-const APPS_SCRIPT_URL = 'APPS_SCRIPT_URL_PLACEHOLDER';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz94dQLc3sXnnvGr5-2xYep7ZwOkWQDeFttPt4vFq-Okf8o95k-mKyKUi_hrXHwkY1cVg/exec';
 
 export default function HealthcareWorkshop() {
   const [formData, setFormData] = useState({ name: '', email: '', organization: '' });
