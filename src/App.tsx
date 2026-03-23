@@ -31,6 +31,7 @@ const ROICalculator = lazy(() => import('./pages/ROICalculator'));
 const OnePager = lazy(() => import('./pages/OnePager'));
 const Hardware = lazy(() => import('./pages/Hardware'));
 const Healthcare = lazy(() => import('./pages/Healthcare'));
+const HealthcareWorkshop = lazy(() => import('./pages/HealthcareWorkshop'));
 const BlogHub = lazy(() => import('./pages/BlogHub'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
 const AdminLogin = lazy(() => import('./pages/admin/AdminLogin'));
@@ -57,6 +58,7 @@ function App() {
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
           <Route path="/qrat-webinar" element={<QRATWebinar />} />
+          <Route path="/healthcare-workshop" element={<HealthcareWorkshop />} />
           <Route path="/pitch-deck" element={<PitchDeck />} />
           <Route path="/pitch-deck-a" element={<PitchDeckA />} />
           <Route path="/roicalc" element={<ROICalculator />} />
