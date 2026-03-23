@@ -84,7 +84,7 @@ export default function HealthcareWorkshop() {
     {
       time: '3–5 min',
       title: 'Next Steps & Q&A',
-      description: 'Your path from this session to a complimentary Quantum Readiness Assessment.',
+      description: 'Your path from this session to a Discovery Sprint engagement.',
       icon: Rocket,
     },
   ];
@@ -284,8 +284,13 @@ export default function HealthcareWorkshop() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
-                  SJ
+                <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-full flex items-center justify-center text-white text-xl font-bold overflow-hidden">
+                  <img
+                    src="/shawn-headshot.jpg"
+                    alt="Shawn Jahromi"
+                    className="w-full h-full object-cover"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement!.textContent = 'SJ'; }}
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Shawn Jahromi, MBA</h3>
