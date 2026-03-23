@@ -126,7 +126,7 @@ export default function HealthcareWorkshop() {
     },
     {
       question: 'What happens after the workshop?',
-      answer: 'Attendees are invited to a complimentary Quantum Readiness Assessment (QRAT) — a focused engagement where we evaluate your infrastructure, identify your highest-impact opportunities, and deliver a strategic roadmap with ROI projections. No patient data required.',
+      answer: 'Interested attendees can engage a Discovery Sprint — a focused 5-day engagement where we review your EHR infrastructure, run executive workshops, and deliver a preliminary readiness score with a go/no-go recommendation. No patient data required. From there, a full QRAT Assessment goes deeper with our proprietary tooling across 42 criteria.',
     },
     {
       question: 'Is there a cost to attend?',
@@ -359,27 +359,27 @@ export default function HealthcareWorkshop() {
               <div className="w-12 h-12 bg-indigo-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-indigo-400 font-bold text-lg">1</span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Assess & Strategize</h3>
-              <p className="text-indigo-400 text-sm font-medium mb-3">This Workshop</p>
-              <p className="text-gray-400 text-sm">Understand quantum's business potential and identify your highest-impact opportunities.</p>
+              <h3 className="text-lg font-bold text-white mb-2">This Workshop</h3>
+              <p className="text-indigo-400 text-sm font-medium mb-3">Complimentary</p>
+              <p className="text-gray-400 text-sm">Understand what quantum-inspired technology can do for your hospital and whether it's worth exploring further.</p>
             </div>
 
             <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 text-center relative">
               <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-cyan-400 font-bold text-lg">2</span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Integrate & Prove</h3>
-              <p className="text-cyan-400 text-sm font-medium mb-3">Free QRAT Assessment</p>
-              <p className="text-gray-400 text-sm">Complimentary 2-week engagement — workshops, technical analysis, and a comprehensive roadmap with ROI projections.</p>
+              <h3 className="text-lg font-bold text-white mb-2">Discovery Sprint</h3>
+              <p className="text-cyan-400 text-sm font-medium mb-3">5 Business Days</p>
+              <p className="text-gray-400 text-sm">Executive workshops, EHR infrastructure review, preliminary readiness score, and a go/no-go recommendation. No patient data required.</p>
             </div>
 
             <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 text-center relative">
               <div className="w-12 h-12 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-emerald-400 font-bold text-lg">3</span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Execute & Scale</h3>
-              <p className="text-emerald-400 text-sm font-medium mb-3">Guided Pilot</p>
-              <p className="text-gray-400 text-sm">Connect existing systems, demonstrate immediate value with a guided pilot, then scale for enterprise-wide results.</p>
+              <h3 className="text-lg font-bold text-white mb-2">Full QRAT Assessment</h3>
+              <p className="text-emerald-400 text-sm font-medium mb-3">2 Weeks</p>
+              <p className="text-gray-400 text-sm">Deep diagnostic using TSL-ANN, UQF, and our Pattern Recognition Engine. Comprehensive readiness score across 42 criteria with quantified ROI projections.</p>
             </div>
           </div>
         </div>
