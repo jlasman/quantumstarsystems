@@ -406,10 +406,26 @@ export default function HealthcareWorkshop() {
             <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-8 text-center">
               <CheckCircle className="w-12 h-12 text-emerald-400 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-white mb-2">You're on the list.</h3>
-              <p className="text-gray-400">
-                We'll be in touch with date, time, and session details. In the meantime, feel free to explore what{' '}
+              <p className="text-gray-400 mb-6">
+                We'll be in touch with date, time, and session details.
+              </p>
+              <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                <p className="text-gray-300 text-sm mb-4">
+                  While you wait, here's our industry brief on where quantum is creating value in healthcare today.
+                </p>
+                <a
+                  href="/quantum-healthcare-report.pdf"
+                  download
+                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-6 py-3 rounded-lg font-medium transition-all text-white text-sm shadow-lg shadow-indigo-500/25"
+                >
+                  <ArrowRight className="w-4 h-4" />
+                  <span>Download the Report (PDF)</span>
+                </a>
+              </div>
+              <p className="text-gray-500 text-xs mt-4">
+                Explore more about{' '}
                 <Link to="/healthcare" className="text-indigo-400 hover:text-indigo-300 underline">
-                  QSS is doing in healthcare
+                  what QSS is doing in healthcare
                 </Link>.
               </p>
             </div>
