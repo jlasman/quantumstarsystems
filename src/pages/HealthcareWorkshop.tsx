@@ -398,7 +398,7 @@ export default function HealthcareWorkshop() {
               Reserve Your Seat
             </h2>
             <p className="text-lg text-gray-400">
-              Limited to 25–35 attendees. Register your interest and we'll confirm your spot.
+              Limited to 25–35 attendees. Register and receive our industry brief on where quantum is creating value in healthcare today.
             </p>
           </div>
 

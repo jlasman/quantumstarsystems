@@ -372,6 +372,26 @@ export default function Healthcare() {
         </div>
       </section>
 
+      {/* Workshop Cross-Link */}
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-slate-800/50 border border-indigo-500/20 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex-1">
+              <p className="text-indigo-400 text-sm font-mono tracking-widest uppercase mb-2">Upcoming Workshop</p>
+              <h3 className="text-xl font-bold text-white mb-2">Quantum-Ready Healthcare. Real ROI, Today.</h3>
+              <p className="text-gray-400 text-sm">A 60-minute session for healthcare executives — see validated results, real case studies, and a practical framework to assess your readiness. Register and receive our industry brief.</p>
+            </div>
+            <Link
+              to="/healthcare-workshop"
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-6 py-3 rounded-lg font-medium transition-all text-white text-sm shadow-lg shadow-indigo-500/25 whitespace-nowrap"
+            >
+              <span>Learn More</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-24 bg-gradient-to-br from-emerald-950/30 via-slate-950 to-cyan-950/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
