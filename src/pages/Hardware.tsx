@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { IMAGES } from '../lib/images';
 import {
   ArrowRight,
   Zap,
@@ -494,15 +495,35 @@ export default function Hardware() {
             </p>
           </div>
 
-          <div className="flex justify-center">
-            <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 max-w-sm w-full text-center hover:border-indigo-500/30 transition-colors">
-              <div className="w-20 h-20 rounded-full mx-auto mb-5 bg-gradient-to-br from-indigo-600/30 to-cyan-600/30 border border-indigo-500/30 flex items-center justify-center">
-                <span className="text-2xl font-bold text-white">JL</span>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 text-center hover:border-indigo-500/30 transition-colors">
+              <img
+                src={IMAGES.jeremyHeadshot}
+                alt="Jeremy Lasman"
+                className="w-20 h-20 rounded-full mx-auto mb-5 object-cover border border-indigo-500/30"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
               <h3 className="text-white font-semibold text-xl mb-1">Jeremy Lasman</h3>
               <p className="text-cyan-400 text-sm mb-4">Co-Founder & CEO</p>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Former SpaceX technologist. Vision, architecture, and business strategy.
+              </p>
+            </div>
+            <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 text-center hover:border-indigo-500/30 transition-colors">
+              <img
+                src={IMAGES.marsHeadshot}
+                alt="Mars Lucchetta"
+                className="w-20 h-20 rounded-full mx-auto mb-5 object-cover border border-indigo-500/30"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+              <h3 className="text-white font-semibold text-xl mb-1">Mars Lucchetta</h3>
+              <p className="text-cyan-400 text-sm mb-4">Co-Founder</p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                10+ years quantum R&D. Creator of the Universal Technique. Physics and engineering lead.
               </p>
             </div>
           </div>
