@@ -482,49 +482,79 @@ export default function Hardware() {
         </div>
       </section>
 
-      {/* ── FOUNDER ──────────────────────────────────────────── */}
-      <section className="py-20 bg-slate-950">
+      {/* ── TEAM ─────────────────────────────────────────────── */}
+      <section className="py-20 bg-slate-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              The Team
-            </p>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Built by Operators.</h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Not theorists. Not researchers. People who've shipped hardware at scale.
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Specialists. Not Generalists.
+            </h2>
+            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+              A pedigree of laser physics, nanosecond timing, and physical bonding.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-            <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 text-center hover:border-indigo-500/30 transition-colors">
-              <img
-                src={IMAGES.jeremyHeadshot}
-                alt="Jeremy Lasman"
-                className="w-20 h-20 rounded-full mx-auto mb-5 object-cover border border-indigo-500/30"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-              <h3 className="text-white font-semibold text-xl mb-1">Jeremy Lasman</h3>
-              <p className="text-cyan-400 text-sm mb-4">Co-Founder & CEO</p>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Former SpaceX technologist. Vision, architecture, and business strategy.
-              </p>
+          <div className="mb-12">
+            <p className="text-sm text-gray-500 font-mono tracking-wide uppercase mb-6 text-center">Founders</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+              <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 text-center">
+                <img
+                  src={IMAGES.jeremyHeadshot}
+                  alt="Jeremy Lasman"
+                  className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-indigo-500/30"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                />
+                <h3 className="text-white font-semibold text-lg">Jeremy Lasman</h3>
+                <p className="text-cyan-400 text-sm mb-3">Co-Founder</p>
+                <p className="text-gray-400 text-sm">Former SpaceX technologist. Vision, architecture, and business strategy.</p>
+              </div>
+              <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 text-center">
+                <img
+                  src={IMAGES.marsHeadshot}
+                  alt="Mars Lucchetta"
+                  className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-indigo-500/30"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                />
+                <h3 className="text-white font-semibold text-lg">Mars Lucchetta</h3>
+                <p className="text-cyan-400 text-sm mb-3">Co-Founder</p>
+                <p className="text-gray-400 text-sm">10+ years quantum R&D. Creator of the Universal Technique. Physics and engineering lead.</p>
+              </div>
             </div>
-            <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 text-center hover:border-indigo-500/30 transition-colors">
-              <img
-                src={IMAGES.marsHeadshot}
-                alt="Mars Lucchetta"
-                className="w-20 h-20 rounded-full mx-auto mb-5 object-cover border border-indigo-500/30"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-              <h3 className="text-white font-semibold text-xl mb-1">Mars Lucchetta</h3>
-              <p className="text-cyan-400 text-sm mb-4">Co-Founder</p>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                10+ years quantum R&D. Creator of the Universal Technique. Physics and engineering lead.
-              </p>
+          </div>
+
+          <div className="mb-12">
+            <p className="text-sm text-gray-500 font-mono tracking-wide uppercase mb-6 text-center">Leadership</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+              <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 text-center">
+                <h4 className="text-white font-semibold">Amos Sterling</h4>
+                <p className="text-cyan-400 text-sm mt-1">CEO</p>
+              </div>
+              <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 text-center">
+                <h4 className="text-white font-semibold">German Palacios</h4>
+                <p className="text-cyan-400 text-sm mt-1">VP of Engineering</p>
+              </div>
+              <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 text-center">
+                <h4 className="text-white font-semibold">Hugo Rodriguez</h4>
+                <p className="text-cyan-400 text-sm mt-1">Senior Optical Engineer</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-sm text-gray-500 font-mono tracking-wide uppercase mb-4">Post-Raise Hiring Plan</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+              <div className="bg-slate-800/30 border border-slate-800 rounded-lg p-4">
+                <h4 className="text-white font-semibold text-sm">Lead Optical Engineer</h4>
+                <p className="text-gray-500 text-xs mt-1">Ex-Quantum Hardware / Photonics</p>
+              </div>
+              <div className="bg-slate-800/30 border border-slate-800 rounded-lg p-4">
+                <h4 className="text-white font-semibold text-sm">Principal Systems Engineer</h4>
+                <p className="text-gray-500 text-xs mt-1">Real-Time Systems & Low-Latency Control</p>
+              </div>
+              <div className="bg-slate-800/30 border border-slate-800 rounded-lg p-4">
+                <h4 className="text-white font-semibold text-sm">Packaging Engineer</h4>
+                <p className="text-gray-500 text-xs mt-1">Silicon Photonics Integration</p>
+              </div>
             </div>
           </div>
         </div>
