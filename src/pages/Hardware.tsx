@@ -53,7 +53,7 @@ export default function Hardware() {
 
             <a
               href="mailto:jeremy@quantumstarsystems.com?subject=QSS%20Hardware%20Investment%20Inquiry"
-              className="inline-flex items-center space-x-2 bg-white text-slate-900 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg"
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40"
             >
               <span>Request Investor Deck</span>
               <ArrowRight className="w-5 h-5" />
