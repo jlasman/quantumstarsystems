@@ -68,7 +68,7 @@ export default function Hardware() {
           {/* Header */}
           <div className="text-center mb-16">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              Section 01
+              The Problem
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               The Silicon Power Crisis.
@@ -168,7 +168,7 @@ export default function Hardware() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              Section 02
+              The Technology
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">The Active Difference.</h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
@@ -223,7 +223,7 @@ export default function Hardware() {
             {/* Left */}
             <div>
               <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-                Section 03
+                De-Risking the Physics
               </p>
               <h2 className="text-3xl md:text-5xl font-bold mb-6">
                 Digital Twin Validation.
@@ -296,7 +296,7 @@ export default function Hardware() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              Section 04
+              The Product
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               The 10-GHz Rack-Mounted Accelerator.
@@ -355,7 +355,7 @@ export default function Hardware() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              Section 05
+              Commercial Applications
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               Solving "NP-Hard" at the Speed of Light.
@@ -400,7 +400,7 @@ export default function Hardware() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              Section 06
+              Roadmap
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               12 Months to System Validation.
@@ -481,12 +481,40 @@ export default function Hardware() {
         </div>
       </section>
 
+      {/* ── FOUNDER ──────────────────────────────────────────── */}
+      <section className="py-20 bg-slate-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
+              The Team
+            </p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Built by Operators.</h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              Not theorists. Not researchers. People who've shipped hardware at scale.
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 max-w-sm w-full text-center hover:border-indigo-500/30 transition-colors">
+              <div className="w-20 h-20 rounded-full mx-auto mb-5 bg-gradient-to-br from-indigo-600/30 to-cyan-600/30 border border-indigo-500/30 flex items-center justify-center">
+                <span className="text-2xl font-bold text-white">JL</span>
+              </div>
+              <h3 className="text-white font-semibold text-xl mb-1">Jeremy Lasman</h3>
+              <p className="text-cyan-400 text-sm mb-4">Co-Founder & CEO</p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Former SpaceX technologist. Vision, architecture, and business strategy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 7: THE ASK ───────────────────────────────── */}
       <section className="py-24 bg-gradient-to-b from-slate-900/60 to-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              Section 07
+              The Ask
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">$4M Seed Round.</h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
