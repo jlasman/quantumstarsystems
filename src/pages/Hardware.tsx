@@ -22,40 +22,43 @@ export default function Hardware() {
 
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/60 via-slate-950 to-cyan-950/50" />
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-[32rem] h-[32rem] bg-indigo-600/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-[32rem] h-[32rem] bg-cyan-600/10 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-950 to-cyan-950/20"></div>
+        <div className="absolute inset-0">
+          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-indigo-600/8 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-cyan-600/8 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-36">
-          {/* Eyebrow */}
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent" />
-            <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium">
-              Investor Read-Ahead
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+          <div className="text-center max-w-4xl mx-auto">
+            {/* Eyebrow */}
+            <div className="mb-6 flex items-center justify-center space-x-4">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
+              <p className="text-sm md:text-base text-cyan-400 font-mono tracking-widest uppercase">
+                Investor Read-Ahead
+              </p>
+              <div className="h-px w-16 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
+            </div>
+
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight pb-2">
+              The All-Optical Future of<br />
+              <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Compute.</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto">
+              We don't just move data with light. We compute with it.
             </p>
-            <div className="h-px w-16 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent" />
+            <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">
+              QSS is building the first room-temperature, rack-mountable Photonic Logic Accelerator
+              for AI and Combinatorial Optimization — using off-the-shelf telecom components.
+            </p>
+
+            <a
+              href="mailto:jeremy@quantumstarsystems.com?subject=QSS%20Hardware%20Investment%20Inquiry"
+              className="inline-flex items-center space-x-2 bg-white text-slate-900 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg"
+            >
+              <span>Request Investor Deck</span>
+              <ArrowRight className="w-5 h-5" />
+            </a>
           </div>
-
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent pb-2">
-            The All-Optical<br className="hidden md:block" /> Future of Compute.
-          </h1>
-          <p className="text-xl md:text-2xl text-cyan-300 font-light mb-6">
-            We don't just move data with light. We compute with it.
-          </p>
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mb-10 leading-relaxed">
-            QSS is building the first room-temperature, rack-mountable Photonic Logic Accelerator
-            for AI and Combinatorial Optimization — using off-the-shelf telecom components.
-          </p>
-
-          <Link
-            to="/contact"
-            className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40"
-          >
-            <span>Request Investor Deck</span>
-            <ArrowRight className="w-5 h-5" />
-          </Link>
         </div>
       </section>
 
