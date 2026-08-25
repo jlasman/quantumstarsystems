@@ -45,11 +45,11 @@ export default function Hardware() {
               <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Electrons.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto">
-              The World's First All-Optical Computing Architecture
+              We don't just move data with light. We compute with it.
             </p>
             <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">
-              A photonic logic engine — not photonic interconnect. Room temperature.
-              Off-the-shelf C-Band / SMF-28. Quantum is the endpoint.
+              QSS is building the first room-temperature photonic logic engine on
+              C-Band / SMF-28. Quantum is the endpoint.
             </p>
 
             <a
