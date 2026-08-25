@@ -15,8 +15,8 @@ import {
   Shield,
 } from 'lucide-react';
 
-const DEEP_DIVE_HREF =
-  'mailto:jeremy@quantumstarsystems.com?subject=Technical%20deep-dive%20on%20the%20non-linear%20optical%20engine';
+const DECK_HREF =
+  'mailto:jeremy@quantumstarsystems.com?subject=QSS%20Hardware%20Investment%20Inquiry';
 
 export default function Hardware() {
   return (
@@ -35,7 +35,7 @@ export default function Hardware() {
             <div className="mb-6 flex items-center justify-center space-x-4">
               <div className="h-px w-16 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
               <p className="text-sm md:text-base text-cyan-400 font-mono tracking-widest uppercase">
-                Hardware Seed · August 2026
+                Investor Read-Ahead
               </p>
               <div className="h-px w-16 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
             </div>
@@ -53,10 +53,10 @@ export default function Hardware() {
             </p>
 
             <a
-              href={DEEP_DIVE_HREF}
+              href={DECK_HREF}
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40"
             >
-              <span>Schedule a Technical Deep-Dive</span>
+              <span>Request Investor Deck</span>
               <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -409,58 +409,28 @@ export default function Hardware() {
         </div>
       </section>
 
-      {/* ── SEED TERMS ───────────────────────────────────────── */}
+      {/* ── THE ASK ──────────────────────────────────────────── */}
       <section className="py-24 bg-slate-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              Seed Terms
+              The Ask
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               $1.5M seed. 12 months.
             </h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              The round. Same paper for every check.
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
+              Financing the year-one milestone: a physical 10 GHz optical logic gate on
+              the bench. Request the investor deck for terms, technical specifications,
+              and team backgrounds.
             </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
-            {[
-              {
-                num: '01',
-                title: 'Instrument',
-                body: 'Standard YC post-money SAFE. Cap. No discount.',
-              },
-              {
-                num: '02',
-                title: 'Size & Time',
-                body: '$1,500,000 · 12 months. 20% round ownership if filled.',
-              },
-              {
-                num: '03',
-                title: 'Valuation Cap',
-                body: '$7.5M post-money.',
-              },
-              {
-                num: '04',
-                title: 'Standard Terms',
-                body: 'Standard pro-rata rights on later priced rounds. No discount. No minimum check size.',
-              },
-              {
-                num: '05',
-                title: 'Paper',
-                body: 'Counsel issues the SAFE. This page is not the instrument.',
-              },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6 hover:border-slate-600 transition-colors"
-              >
-                <p className="text-xs font-mono tracking-widest text-gray-500 mb-3">{item.num}</p>
-                <p className="font-semibold text-white mb-2">{item.title}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{item.body}</p>
-              </div>
-            ))}
+            <a
+              href={DECK_HREF}
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40"
+            >
+              <span>Request Investor Deck</span>
+              <ArrowRight className="w-5 h-5" />
+            </a>
           </div>
         </div>
       </section>
@@ -528,15 +498,16 @@ export default function Hardware() {
           <div className="text-center">
             <div className="inline-block bg-gradient-to-r from-indigo-950/80 to-cyan-950/80 border border-slate-700/60 rounded-2xl px-10 py-10">
               <p className="text-xs font-bold tracking-wider text-cyan-300 mb-3">NEXT</p>
-              <h3 className="text-2xl md:text-3xl font-bold mb-3">The $1.5M seed.</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-3">Request the investor deck.</h3>
               <p className="text-gray-400 mb-8 max-w-lg">
-                Schedule a technical deep-dive on the non-linear optical engine with Mars.
+                After the deck, we can schedule a technical deep-dive on the non-linear
+                optical engine with Mars.
               </p>
               <a
-                href={DEEP_DIVE_HREF}
+                href={DECK_HREF}
                 className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40"
               >
-                <span>jeremy@quantumstarsystems.com</span>
+                <span>Request Investor Deck</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
