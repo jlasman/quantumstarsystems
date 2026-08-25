@@ -464,11 +464,11 @@ export default function Hardware() {
             <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 text-center">
               <img
                 src={IMAGES.marsHeadshot}
-                alt="Mars Luchetta"
+                alt="Mars Lucchetta"
                 className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border border-indigo-500/30"
                 onError={(e) => { e.currentTarget.style.display = 'none'; }}
               />
-              <h3 className="text-white font-semibold text-lg">Mars Luchetta</h3>
+              <h3 className="text-white font-semibold text-lg">Mars Lucchetta</h3>
               <p className="text-cyan-400 text-sm mb-3">Co-founder</p>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Optical & Systems Architecture. Two core provisionals on the non-linear
