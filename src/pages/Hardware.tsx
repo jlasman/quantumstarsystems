@@ -227,18 +227,19 @@ export default function Hardware() {
         </div>
       </section>
 
-      {/* ── THE BET ──────────────────────────────────────────── */}
+      {/* ── THE PRODUCT ──────────────────────────────────────── */}
       <section className="py-24 bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              The Bet
+              The Product
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               The optical engine.
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Phase 1: This engine.
+              Phase 1: This engine. Processor core first, then TD-RAM.
+              Quantum is the endpoint.
             </p>
           </div>
 
