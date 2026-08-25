@@ -432,7 +432,8 @@ export default function Hardware() {
             <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
               Financing the year-one milestone: a physical 10 GHz optical logic gate on
               the bench. Request the investor deck for terms, technical specifications,
-              and team backgrounds.
+              and team backgrounds. After the deck, we can schedule a technical
+              deep-dive on the non-linear optical engine with Mars.
             </p>
             <a
               href={DECK_HREF}
@@ -445,12 +446,12 @@ export default function Hardware() {
         </div>
       </section>
 
-      {/* ── TEAM · NEXT ──────────────────────────────────────── */}
+      {/* ── TEAM ─────────────────────────────────────────────── */}
       <section className="py-20 bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              Team · Next
+              Team
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Leadership
@@ -487,7 +488,7 @@ export default function Hardware() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6">
               <h4 className="text-white font-semibold">German Palacios</h4>
               <p className="text-cyan-400 text-sm mt-1 mb-3">VP of Engineering</p>
@@ -502,24 +503,6 @@ export default function Hardware() {
               <p className="text-gray-400 text-sm leading-relaxed">
                 Precision optics alignment, ultrafast laser systems, and C-Band metrology.
               </p>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <div className="inline-block bg-gradient-to-r from-indigo-950/80 to-cyan-950/80 border border-slate-700/60 rounded-2xl px-10 py-10">
-              <p className="text-xs font-bold tracking-wider text-cyan-300 mb-3">NEXT</p>
-              <h3 className="text-2xl md:text-3xl font-bold mb-3">Request the investor deck.</h3>
-              <p className="text-gray-400 mb-8 max-w-lg">
-                After the deck, we can schedule a technical deep-dive on the non-linear
-                optical engine with Mars.
-              </p>
-              <a
-                href={DECK_HREF}
-                className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40"
-              >
-                <span>Request Investor Deck</span>
-                <ArrowRight className="w-5 h-5" />
-              </a>
             </div>
           </div>
         </div>
