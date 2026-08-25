@@ -285,16 +285,20 @@ export default function Hardware() {
         </div>
       </section>
 
-      {/* ── YEAR ONE ─────────────────────────────────────────── */}
+      {/* ── ROADMAP ──────────────────────────────────────────── */}
       <section className="py-24 bg-slate-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              Year One
+              Roadmap
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               12 Months. One Milestone.
             </h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              From validated digital twin to a physical 10 GHz optical logic gate
+              on the bench.
+            </p>
           </div>
 
           <div className="relative">
