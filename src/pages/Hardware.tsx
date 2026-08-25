@@ -123,18 +123,20 @@ export default function Hardware() {
         </div>
       </section>
 
-      {/* ── THE ENGINE ───────────────────────────────────────── */}
+      {/* ── THE TECHNOLOGY ───────────────────────────────────── */}
       <section className="py-24 bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              The Engine
+              The Technology
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               A photonic logic engine.
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Not photonic interconnect.
+              We don't just move data with light — not photonic interconnect.
+              Competitors pass light through unchanged. QSS switches and
+              thresholds in hardware.
             </p>
           </div>
 
