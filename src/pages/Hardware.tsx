@@ -173,16 +173,19 @@ export default function Hardware() {
         </div>
       </section>
 
-      {/* ── WHAT IS TRUE TODAY ───────────────────────────────── */}
+      {/* ── DE-RISKING THE PHYSICS ───────────────────────────── */}
       <section className="py-24 bg-slate-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm tracking-widest uppercase text-cyan-400 font-medium mb-4">
-              What Is True Today
+              De-Risking the Physics
             </p>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               The architecture is validated.
             </h2>
+            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+              Physics-level model in Ansys Lumerical. Simulation risk is behind us.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
